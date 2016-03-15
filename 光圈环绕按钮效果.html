@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>光环按钮</title>
+    <style>
+    body,
+    html {
+        background: #64B14F;
+        margin: 0;
+        padding: 0;
+    }
+    /*按钮*/
+    
+    .join {
+        position: relative;
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        width: 148px;
+        height: 40px;
+        color: #fff5d1;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        font-size: 20px;
+        text-decoration: none;
+        top: 247px;
+        left: 0px;
+    }
+
+    .join:after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 40px;
+        background: url(http://appsearchcdn.baidu.com/statics/devplat/static/golden/img/spark_adce339.png) no-repeat;
+        top: -20px;
+        left: 0;
+        -webkit-animation-name: spark;
+        -webkit-transform-origin: 50% 100%;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: normal;
+    }
+    /*光点*/
+    
+    .spark {
+        
+    }
+    /*动画*/
+    
+    @-webkit-keyframes 'spark' {
+        0% {
+            left: 6px;
+            transform: rotate(0deg)
+        }
+        35% {
+            left: 112px;
+            transform: rotate(0deg)
+        }
+        50% {
+            left: 112px;
+            transform: rotate(180deg)
+        }
+        85% {
+            left: 6px;
+            transform: rotate(180deg)
+        }
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <a href="javascript:;" class="join">按钮</a>
+</body>
+
+</html>
